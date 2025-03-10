@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Car Insurance Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h1>Car Insurance Registration</h1>
+
+  <form action="#" method="POST" id="car-insurance-form">
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        required
+      >
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required
+      >
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <span>Gender:</span>
+      <label for="male">Male</label>
+      <input 
+        type="radio" 
+        id="male" 
+        name="gender" 
+        value="Male" 
+        required
+      >
+      <label for="female">Female</label>
+      <input 
+        type="radio" 
+        id="female" 
+        name="gender" 
+        value="Female" 
+        required
+      >
+    </div>
+
+    <!-- Car Brands -->
+    <div class="form-group">
+      <label for="cars">Car Brands:</label>
+      <select 
+        id="cars" 
+        name="cars" 
+        required
+      >
+        <option value="">--Select a brand--</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+      </select>
+    </div>
+
+    <!-- Date of Purchase -->
+    <div class="form-group">
+      <label for="purchaseDate">Date of Purchase (DoP):</label>
+      <input 
+        type="date" 
+        id="purchaseDate" 
+        name="purchaseDate" 
+        required
+      >
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Car Password:</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        required
+      >
+    </div>
+
+    <!-- Submit Button -->
+    <button 
+      type="submit" 
+      id="submit"
+    >
+      Submit
+    </button>
+  </form>
 
 </body>
-
 </html>
