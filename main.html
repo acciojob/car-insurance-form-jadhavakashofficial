@@ -1,103 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Car Insurance Registration Form</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Car Insurance Registration</h1>
+    <div class="form-container">
+        <h2>Car Insurance Registration Form</h2>
+        <form method="post">
+            
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-  <form action="#" method="POST" id="car-insurance-form">
-    <!-- Name -->
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input 
-        type="text" 
-        id="name" 
-        name="name" 
-        required
-      >
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <!-- Car Brands -->
+            <label for="cars">Car Brands:</label>
+            <select id="cars" name="cars">
+                <option value="" disabled selected>--Select a Car Brand--</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+
+            <!-- Car Age -->
+            <label for="carage">Car Age:</label>
+            <input type="number" id="carage" name="carage" required>
+
+            <!-- Date of Purchase -->
+            <label for="dop">Date of Purchase (DOP):</label>
+            <input type="date" id="dop" name="dop" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
     </div>
-
-    <!-- Email -->
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        required
-      >
-    </div>
-
-    <!-- Gender -->
-    <div class="form-group">
-      <span>Gender:</span>
-      <label for="male">Male</label>
-      <input 
-        type="radio" 
-        id="male" 
-        name="gender" 
-        value="Male" 
-        required
-      >
-      <label for="female">Female</label>
-      <input 
-        type="radio" 
-        id="female" 
-        name="gender" 
-        value="Female" 
-        required
-      >
-    </div>
-
-    <!-- Car Brands -->
-    <div class="form-group">
-      <label for="cars">Car Brands:</label>
-      <select 
-        id="cars" 
-        name="cars" 
-        required
-      >
-        <option value="">--Select a brand--</option>
-        <option value="BMW">BMW</option>
-        <option value="Audi">Audi</option>
-        <option value="Mercedes">Mercedes</option>
-      </select>
-    </div>
-
-    <!-- Date of Purchase -->
-    <div class="form-group">
-      <label for="purchaseDate">Date of Purchase (DoP):</label>
-      <input 
-        type="date" 
-        id="purchaseDate" 
-        name="purchaseDate" 
-        required
-      >
-    </div>
-
-    <!-- Password -->
-    <div class="form-group">
-      <label for="password">Car Password:</label>
-      <input 
-        type="password" 
-        id="password" 
-        name="password" 
-        required
-      >
-    </div>
-
-    <!-- Submit Button -->
-    <button 
-      type="submit" 
-      id="submit"
-    >
-      Submit
-    </button>
-  </form>
 
 </body>
 </html>
